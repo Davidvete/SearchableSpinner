@@ -13,11 +13,12 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 public class SearchableSpinner extends Spinner implements View.OnTouchListener,
-        SearchableListDialog.SearchableItem {
+        SearchableListDialog.SearchableItem, Serializable {
 
     public static final int NO_ITEM_SELECTED = -1;
     private Context _context;
